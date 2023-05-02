@@ -1,0 +1,79 @@
+/* Add a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Add a general style to the body */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Style the network container */
+#mynetwork {
+  width: 1300px;
+  height: 800px;
+  border: 1px solid lightgray;
+  background-color: white;
+  margin: 30px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the buttons container */
+#tempButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#functionButtons {
+      display: inline-block;
+}
+
+/* Style the buttons */
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Style the select element */
+select {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #f1f1f1;
+  margin: 4px 2px;
+}
+
+/* Style the function header paragraph */
+#functionHeader {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+/* Style the controls */
+#next, #pause, #back {
+  display: none;
+}

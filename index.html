@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Network</title>
+
+  <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css"> </style>
+  </head>
+  <body>
+    <div id ="tempButtons">
+      <button id="newNode" onclick="addNode()">Add node</button>
+      <button id="deleteNode" onclick="deleteNode()">Delete node</button>
+      <select id="select">
+        <option value="">Select a node to add an edge</option>
+      </select>
+      <input type="number" id="length" name min="-100" max="100" step="1" value="1">
+      <button id="newEdge" onclick="addEdge()">New Edge</button>
+      <button id="BF" onclick="chooseAlgo('BF')">BF</button>
+      <button id="DF" onclick="chooseAlgo('DF')">DF</button>
+      <button id="DIJK" onclick="chooseAlgo('DIJK')">DIJ</button>
+      <input type="file" id="file" accept=".txt" onchange="readFile()" />
+    </div>
+
+    <p id = "functionHeader"></p>
+    <div id = "functionButton">
+      <button id="back"onclick="" ><</button>
+      <button id="pause" onclick="">||</button>
+      <button id="next" onclick="">></button>
+    </div>
+    <p id="results"></p>
+
+    <div id="mynetwork"> </div>
+  </body>
+</html>
